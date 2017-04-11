@@ -1,5 +1,4 @@
-angular.module('starter.controllers', [])
-
+angular.module('moTree', [])
 .controller('HomeCtrl', function ($scope, $state) {
   $scope.loadDataFinish = false;
   init();
@@ -9,13 +8,13 @@ angular.module('starter.controllers', [])
     $scope.loadDataFinish = true;
   }
 
-  $scope.$on('$ionicView.beforeEnter', function() {
+  $scope.$on('$ionicView.beforeEnter', function () {
     init();
   });
 
   $scope.openSkill = function (event) {
     var id = event.srcElement.parentElement.getAttribute('id');
-    $state.go('app.skill', {id: id});
+    console.log(id);
   };
 
   $scope.canAddPoint = function () {
