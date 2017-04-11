@@ -1,0 +1,42 @@
+{
+  "name": "Growth 技能树",
+  "short_name": "Motree",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#387ef5",
+  "orientation": "portrait",
+  "theme_color": "#387ef5",
+  "icons": [{
+    "src": "img/app-icon-32.png",
+    "type": "image/png",
+    "sizes": "32x32"
+  }, {
+    "src": "img/icon.svg",
+    "sizes": "128x128",
+    "type": "image/svg"
+  }, {
+    "src": "img/app-icon-144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "img/icon.svg",
+    "sizes": "192x192",
+    "type": "image/svg"
+  },{
+    "src": "img/icon.svg",
+    "sizes": "384x384",
+    "type": "image/svg"
+  }],
+  "author": {
+    "name": "Fengda Huang",
+    "website": "https://www.phodal.com/",
+    "github": "https://github.com/phodal",
+    "source-repo": "https://github.com/phodal/motree"
+  },
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "ren.growth.skilltree"
+    }
+  ]
+}

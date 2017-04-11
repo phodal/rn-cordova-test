@@ -1,0 +1,56 @@
+<ion-view view-title="{{skill.title}}">
+  <ion-content>
+    <div class="card" ng-if="skill.description">
+      <div class="item item-divider">
+        简介
+      </div>
+      <div class="item item-text-wrap">
+        {{skill.description}}
+      </div>
+    </div>
+
+    <div class="card" ng-if="!!skillDependence && skillDependence.length > 0">
+      <div class="item item-divider">
+        依赖技能
+      </div>
+      <ion-list>
+        <ion-item ng-repeat="dep in skillDependence" ng-click="gotoDependence(dep.id)">
+          {{dep.title}}
+        </ion-item>
+      </ion-list>
+    </div>
+
+    <div class="card" ng-if="skill.rankDescriptions && skill.rankDescriptions.length > 0">
+      <div class="item item-divider">
+        点亮技能
+      </div>
+      <ion-list>
+        <div ng-if="skill.rankDescriptions && skill.rankDescriptions.length > 0">
+          <div ng-repeat="todo in skill.rankDescriptions">
+            <ion-checkbox ng-change="addItemToDone()"
+                          ng-model="skillStorageInfo['rank-' + $index]['checked']"
+                          ng-checked="skillStorageInfo['rank-' + $index]['checked']">{{todo}}</ion-checkbox>
+          </div>
+        </div>
+      </ion-list>
+    </div>
+
+    <div class="card" ng-if="skill.links">
+      <div class="item item-divider">
+        扩展资料
+      </div>
+      <ion-item ng-repeat="link in skill.links" ng-click="openLink(link)">
+        {{link.label}}
+      </ion-item>
+    </div>
+
+    <div class="card" ng-if="skill.books">
+      <div class="item item-divider">
+        推荐书籍
+      </div>
+      <ion-item ng-repeat="book in skill.books" ng-click="openLink(book)">
+        {{book.label}}
+      </ion-item>
+    </div>
+  </ion-content>
+</ion-view>
