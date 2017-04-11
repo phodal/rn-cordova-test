@@ -21,7 +21,7 @@
         document.getElementsByTagName('p')[1].innerHTML = e.data;
     });
     document.getElementsByTagName('button')[0].addEventListener('click', function () {
-        window.postMessage('{data:' + messagesReceivedFromReactNative + }');
+        window.postMessage({data:messagesReceivedFromReactNative });
     });
 </script>
 </html>
