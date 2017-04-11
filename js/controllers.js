@@ -1,9 +1,5 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function ($scope, $ionicModal, $timeout, $rootScope) {
-
-})
-
 .controller('HomeCtrl', function ($scope, $state) {
   $scope.loadDataFinish = false;
   init();
@@ -30,7 +26,3 @@ angular.module('starter.controllers', [])
 
   };
 })
-
-.controller('SkillCtrl', function ($scope, $state, $stateParams) {
-
-});

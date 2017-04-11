@@ -22,7 +22,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     .state('app', {
     url: '/app',
     abstract: true,
-    templateUrl: 'templates/menu.html',
+    templateUrl: '',
     controller: 'AppCtrl'
   })
 
@@ -34,24 +34,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'HomeCtrl'
       }
     }
-  })
-  .state('app.skill', {
-    url: '/skill/:id',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/skill.html',
-        controller: 'SkillCtrl'
-      }
-    }
-  })
-  .state('app.about', {
-    url: '/about',
-    views: {
-      'menuContent': {
-        templateUrl: 'templates/about.html'
-      }
-    }
   });
-  // if none of the above states are matched, use this as the fallback
+
   $urlRouterProvider.otherwise('/app/home');
 });
