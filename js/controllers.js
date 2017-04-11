@@ -1,28 +1,7 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $rootScope) {
-  $scope.$on('$ionicView.afterEnter', function() {
-    if (!$rootScope.alreadyEnter) {
-      if (!window.cordova) {
-        $rootScope.alreadyEnter = true;
-        $ionicModal.fromTemplateUrl('templates/svg-splash.html', {
-          scope: $scope,
-          animation: 'scale-in'
-        }).then(function (modal) {
-          $scope.modal = modal;
-          $scope.modal.show();
-          var splashAnimate = new Vivus('splash', {type: 'sync', duration: 150});
-          $scope.splashAnimate = function () {
-            return splashAnimate;
-          };
-        });
 
-        $timeout(function () {
-          $scope.modal.hide();
-        }, 3000);
-      }
-    }
-  });
 })
 
 .controller('HomeCtrl', function ($scope, $state) {
