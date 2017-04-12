@@ -9,9 +9,10 @@
 </head>
 
 <body ng-app="moTree" ng-controller="HomeCtrl">
-<ion-content>
-  <ion-scroll zooming="true" direction="xy" ng-if="loadDataFinish">
-    <svg  version="1.1" id="logo"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<div class="scroll-content">
+  <div class="scroll-view ionic-scroll scroll-xy">
+    <div class="scroll">
+      <svg  version="1.1" id="logo"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
      width="1200" height="620"  viewBox="0 0 1200 620" style="enable-background:new 0 0 1200 620;" xml:space="preserve">
     <g>
       <g class="output">
@@ -903,8 +904,9 @@
       </g>
     </g>
   </svg>
-  </ion-scroll>
-</ion-content>
+    </div>
+  </div>
+</div>
 <script src="js/controllers.js"></script>
 </body>
 </html>
