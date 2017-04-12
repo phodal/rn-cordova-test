@@ -1,2 +1,12 @@
-# rn-cordova-test
-test for Cordova with React Native intergration
+# React Native + Cordova Test
+
+This project was a test for intergrate legacy cordova, ionic project with React Native.
+
+[Cordova Part](https://github.com/phodal/rn-cordova-test-web)
+
+[Native Part](https://github.com/phodal/rn-cordova-test-native)
+
+License
+---
+
+MIT
