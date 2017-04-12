@@ -1,5 +1,5 @@
-angular.module('moTree', [])
-.controller('HomeCtrl', function ($scope, $state) {
+var app = angular.module('moTree', []);
+app.controller('HomeCtrl', function ($scope) {
   $scope.loadDataFinish = false;
   init();
 
