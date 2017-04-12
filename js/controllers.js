@@ -14,7 +14,7 @@ app.controller('HomeCtrl', function ($scope) {
 
   $scope.openSkill = function (event) {
     var id = event.srcElement.parentElement.getAttribute('id');
-    window.postMessage({ id: id});
+    window.postMessage(JSON.stringify({ id: id}));
   };
 
   $scope.canAddPoint = function () {
